@@ -177,13 +177,17 @@ h3 {
   min-height: calc(100vh - 76px);
   display: grid;
   grid-template-columns: 1.15fr .85fr;
-  align-items: center;
+  align-items: start;
   gap: 30px
 }
 
 .hero-header {
   grid-column: 1 / -1;
   width: 100%;
+}
+
+.hero-header h2 {
+  max-width: none;
 }
 
 .context-map {
@@ -948,7 +952,7 @@ footer small {
   min-height: auto;
   padding-top: 56px;
   padding-bottom: 96px;
-  align-items: center
+  align-items: start
 }
 
 h1 {

@@ -154,6 +154,16 @@ h3 {
   margin: 28px 0
 }
 
+.proof-list {
+  margin: 0 0 28px;
+  padding-left: 18px;
+  color: #c2c8c5
+}
+
+.proof-list li {
+  margin: 10px 0
+}
+
 .actions {
   display: flex;
   gap: 12px;
@@ -638,6 +648,33 @@ h3 {
   grid-template-columns: repeat(3, 1fr)
 }
 
+#thesis .why-grid {
+  grid-template-columns: repeat(2, 1fr)
+}
+
+#thesis .why-grid article {
+  min-height: 0
+}
+
+.ask-list {
+  margin-top: 36px
+}
+
+.ask-list h3 {
+  margin: 0 0 14px;
+  font-size: 18px
+}
+
+.ask-list ul {
+  margin: 0;
+  padding-left: 18px;
+  color: #b8c0be
+}
+
+.ask-list li {
+  margin: 10px 0
+}
+
 .roadmap {
   border-top: 1px solid var(--line)
 }
@@ -836,6 +873,7 @@ footer small {
   .systems,
   .grid-cards,
   .why-grid,
+  #thesis .why-grid,
   .dual {
     grid-template-columns: 1fr
   }

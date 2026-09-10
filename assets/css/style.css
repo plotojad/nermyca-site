@@ -485,8 +485,8 @@ h3 {
 
 .octopus {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 70px;
+  grid-template-columns: 1fr 1.05fr;
+  gap: 48px;
   align-items: center
 }
 
@@ -497,6 +497,28 @@ h3 {
 
 .octo-copy li {
   margin: 12px 0
+}
+
+.octo-visual {
+  margin: 0;
+  min-width: 0
+}
+
+.octo-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid var(--line)
+}
+
+.octo-visual figcaption {
+  margin-top: 12px;
+  color: var(--steel);
+  font-size: 13px;
+  letter-spacing: .02em
 }
 
 .octo-diagram {
@@ -942,9 +964,14 @@ footer small {
     gap: 5px
   }
 
-  .octo-diagram {
+  .octo-diagram,
+  .octo-visual {
     overflow-x: auto;
     padding-bottom: 10px
+  }
+
+  .octo-visual img {
+    aspect-ratio: 16 / 10
   }
 
   .roadmap article {

@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#0B0F10">
-  <meta name="description"
+  <meta name="description" data-i18n-meta="description:meta.description"
     content="Nermyca — промышленная платформа: объяснимый контекст вокруг актива, от сигнала до утверждённого человеком плана работ. Локально на предприятии, без облачного ИИ.">
-  <title>Nermyca — от сигнала к решению</title>
+  <title data-i18n-meta="title:meta.title">Nermyca — от сигнала к решению</title>
   <link rel="icon" href="assets/img/nermyca-logo-cyan.png" type="image/png">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -90,14 +90,18 @@
   </svg>
 
   <header class="topbar">
-    <a class="brand" href="#top" aria-label="Nermyca — на главную">
+    <a class="brand" href="#top" aria-label="Nermyca — на главную" data-i18n-attr="aria-label:nav.brandAria">
       <img src="assets/img/nermyca-logo-cyan.png" alt="">
       <span>NERMYCA</span>
     </a>
-    <button class="menu" aria-label="Открыть меню" aria-expanded="false">Меню</button>
+    <button class="menu" aria-label="Открыть меню" aria-expanded="false" data-i18n="nav.menu" data-i18n-attr="aria-label:nav.menuAria">Меню</button>
     <nav>
-      <a href="#thesis">Ставка</a><a href="#economics">Экономика</a><a href="#scenario">Как работает</a>
-      <a href="#demo">Демонстратор</a><a href="#status">Статус</a><a class="nav-cta" href="#contact">Инвестору</a>
+      <a href="#thesis" data-i18n="nav.thesis">Ставка</a><a href="#economics" data-i18n="nav.economics">Экономика</a><a href="#scenario" data-i18n="nav.scenario">Как работает</a>
+      <a href="#demo" data-i18n="nav.demo">Демонстратор</a><a href="#status" data-i18n="nav.status">Статус</a><a class="nav-cta" href="#contact" data-i18n="nav.contact">Инвестору</a>
+      <div class="lang-switch" role="group" aria-label="Переключение языка" data-i18n-attr="aria-label:lang.switchAria">
+        <button type="button" class="lang-btn is-active" data-set-lang="ru" aria-pressed="true">РУС</button>
+        <button type="button" class="lang-btn" data-set-lang="en" aria-pressed="false">ENG</button>
+      </div>
     </nav>
   </header>
 
@@ -108,31 +112,31 @@
           <div class="section-icon">
             <img src="assets/icons/hub.svg" alt="" aria-hidden="true">
           </div>
-          <span>Промышленный технологический стартап</span>
+          <span data-i18n="hero.eyebrow">Промышленный технологический стартап</span>
         </div>
-        <h2>Nermyca превращает разрозненные данные завода в одну ситуацию — и даёт инженеру основание действовать до аварии.</h2>
+        <h2 data-i18n="hero.title">Nermyca превращает разрозненные данные завода в одну ситуацию — и даёт инженеру основание действовать до аварии.</h2>
       </div>
       <div class="hero-copy reveal">
-        <p class="lead">Мы строим Nermyca вокруг актива: телеметрия, события, история, документы, компетенции и
+        <p class="lead" data-i18n="hero.lead">Мы строим Nermyca вокруг актива: телеметрия, события, история, документы, компетенции и
           ресурсы связываются в объяснимый инженерный контекст. Не ещё один экран с графиками — слой понимания с
           человеческим решением в центре.</p>
-        <p class="motto">От сигнала — к ситуации. От ситуации — к обоснованному действию.</p>
+        <p class="motto" data-i18n="hero.motto">От сигнала — к ситуации. От ситуации — к обоснованному действию.</p>
         <ul class="proof-list">
-          <li>Ядро Nermyca уже работает: актив, событие, процесс, знания</li>
-          <li>Есть воспроизводимый демонстратор: от деградации оборудования до плана работ</li>
-          <li>Следующий шаг — пилот на реальном производстве</li>
+          <li data-i18n="hero.proof1">Ядро Nermyca уже работает: актив, событие, процесс, знания</li>
+          <li data-i18n="hero.proof2">Есть воспроизводимый демонстратор: от деградации оборудования до плана работ</li>
+          <li data-i18n="hero.proof3">Следующий шаг — пилот на реальном производстве</li>
         </ul>
-        <div class="actions"><a class="btn primary" href="#contact">Обсудить инвестиции</a><a class="btn"
-            href="#scenario">Смотреть сценарий</a></div>
+        <div class="actions"><a class="btn primary" href="#contact" data-i18n="hero.ctaInvest">Обсудить инвестиции</a><a class="btn"
+            href="#scenario" data-i18n="hero.ctaScenario">Смотреть сценарий</a></div>
       </div>
-      <div class="context-map reveal" aria-label="Схема связанного промышленного контекста">
-        <div class="core"><img src="assets/img/nermyca-logo-cyan.png" alt=""><b>Насос №17</b><span>Актив</span></div>
-        <div class="node n1"><b>7,3 мм/с</b><span>Вибрация</span></div>
-        <div class="node n2"><b>+12 °C</b><span>Температура</span></div>
-        <div class="node n3"><b>14 мес.</b><span>История</span></div>
-        <div class="node n4"><b>8 300 ч</b><span>Наработка</span></div>
-        <div class="node n5"><b>SKF 6312</b><span>Запасная часть</span></div>
-        <div class="node n6"><b>2 специалиста</b><span>Компетенции</span></div>
+      <div class="context-map reveal" aria-label="Схема связанного промышленного контекста" data-i18n-attr="aria-label:map.aria">
+        <div class="core"><img src="assets/img/nermyca-logo-cyan.png" alt=""><b data-i18n="map.pump">Насос №17</b><span data-i18n="map.asset">Актив</span></div>
+        <div class="node n1"><b data-i18n="map.vVal">7,3 мм/с</b><span data-i18n="map.vibration">Вибрация</span></div>
+        <div class="node n2"><b data-i18n="map.tVal">+12 °C</b><span data-i18n="map.temperature">Температура</span></div>
+        <div class="node n3"><b data-i18n="map.hVal">14 мес.</b><span data-i18n="map.history">История</span></div>
+        <div class="node n4"><b data-i18n="map.rVal">8 300 ч</b><span data-i18n="map.runtime">Наработка</span></div>
+        <div class="node n5"><b>SKF 6312</b><span data-i18n="map.spare">Запасная часть</span></div>
+        <div class="node n6"><b data-i18n="map.cVal">2 специалиста</b><span data-i18n="map.competency">Компетенции</span></div>
         <svg viewBox="0 0 600 520" aria-hidden="true">
           <g>
             <line x1="300" y1="260" x2="105" y2="95" />
@@ -151,28 +155,28 @@
         <div class="section-icon">
           <img src="assets/icons/hive.svg" alt="" aria-hidden="true">
         </div>
-        <span>Инвестиционный тезис</span>
+        <span data-i18n="thesis.eyebrow">Инвестиционный тезис</span>
       </div>
-      <h2>Заводы тонут в данных.<em> Им не хватает связей, которые превращают данные в решение.</em></h2>
+      <h2 data-i18n-html="thesis.titleHtml">Заводы тонут в данных.<em> Им не хватает связей, которые превращают данные в решение.</em></h2>
       <div class="why-grid">
         <article>
-          <h3>Боль уже есть</h3>
-          <p>SCADA, ТОиР, ERP, документы и люди живут в разных контурах. Когда машина начинает «плыть», картину снова
+          <h3 data-i18n="thesis.painTitle">Боль уже есть</h3>
+          <p data-i18n="thesis.painText">SCADA, ТОиР, ERP, документы и люди живут в разных контурах. Когда машина начинает «плыть», картину снова
             собирает человек — вручную и поздно.</p>
         </article>
         <article>
-          <h3>Почему сейчас</h3>
-          <p>Датчиков и систем всё больше, а опытных инженеров — всё меньше. Ценность смещается от сбора данных к
+          <h3 data-i18n="thesis.nowTitle">Почему сейчас</h3>
+          <p data-i18n="thesis.nowText">Датчиков и систем всё больше, а опытных инженеров — всё меньше. Ценность смещается от сбора данных к
             удержанию контекста и организационной памяти.</p>
         </article>
         <article>
-          <h3>Почему Nermyca</h3>
-          <p>Мы делаем не мониторинг и не «чёрный ящик» ИИ. Мы собираем объяснимый контекст вокруг актива — и оставляем
+          <h3 data-i18n="thesis.whyTitle">Почему Nermyca</h3>
+          <p data-i18n="thesis.whyText">Мы делаем не мониторинг и не «чёрный ящик» ИИ. Мы собираем объяснимый контекст вокруг актива — и оставляем
             решение за человеком.</p>
         </article>
         <article>
-          <h3>Где защита</h3>
-          <p>Предметная модель + объяснимая цепочка до действия + память предприятия + локальное развёртывание. Полевой
+          <h3 data-i18n="thesis.moatTitle">Где защита</h3>
+          <p data-i18n="thesis.moatText">Предметная модель + объяснимая цепочка до действия + память предприятия + локальное развёртывание. Полевой
             узел Octopus — будущий аппаратный вход для «немого» парка.</p>
         </article>
       </div>
@@ -183,22 +187,22 @@
         <div class="section-icon">
           <img src="assets/icons/troubleshoot.svg" alt="" aria-hidden="true">
         </div>
-        <span>Проблема</span>
+        <span data-i18n="problem.eyebrow">Проблема</span>
       </div>
-      <h2>Предприятие знает многое.<em> Но ни одна система не видит ситуацию целиком.</em></h2>
+      <h2 data-i18n-html="problem.titleHtml">Предприятие знает многое.<em> Но ни одна система не видит ситуацию целиком.</em></h2>
       <div class="systems">
-        <article><b>SCADA / ПЛК</b><span>телеметрия и управление</span></article>
-        <article><b>ТОиР</b><span>ремонты и обслуживание</span></article>
-        <article><b>ERP / склад</b><span>ресурсы и запасные части</span></article>
-        <article><b>Документы</b><span>регламенты и инструкции</span></article>
-        <article><b>Люди</b><span>опыт, которого нет в базах</span></article>
+        <article><b data-i18n="problem.scadaLabel">SCADA / ПЛК</b><span data-i18n="problem.scada">телеметрия и управление</span></article>
+        <article><b data-i18n="problem.cmmsLabel">ТОиР</b><span data-i18n="problem.cmms">ремонты и обслуживание</span></article>
+        <article><b data-i18n="problem.erpLabel">ERP / склад</b><span data-i18n="problem.erp">ресурсы и запасные части</span></article>
+        <article><b data-i18n="problem.docsLabel">Документы</b><span data-i18n="problem.docs">регламенты и инструкции</span></article>
+        <article><b data-i18n="problem.peopleLabel">Люди</b><span data-i18n="problem.people">опыт, которого нет в базах</span></article>
       </div>
-      <p class="statement reveal">Каждый источник решает свою задачу. Но когда состояние конкретной машины меняется,
+      <p class="statement reveal" data-i18n-html="problem.statementHtml">Каждый источник решает свою задачу. Но когда состояние конкретной машины меняется,
         инженеру приходится вручную сопоставлять показания, историю ремонтов, наработку, документацию, наличие деталей и
         чужой опыт.<br><br>
         В этот разрыв и входит Nermyca: не вместо существующих систем, а как слой, который собирает вокруг актива одну
         промышленную ситуацию и доводит её до объяснимого плана — с утверждением человеком.</p>
-      <p class="bigline reveal">Данные на заводе уже есть.<br><em>Не хватает системы, которая делает из них основание для
+      <p class="bigline reveal" data-i18n-html="problem.biglineHtml">Данные на заводе уже есть.<br><em>Не хватает системы, которая делает из них основание для
           решения.</em>
       </p>
     </section>
@@ -208,50 +212,50 @@
         <div class="section-icon">
           <img src="assets/icons/money.svg" alt="" aria-hidden="true">
         </div>
-        <span>Экономика ситуации</span>
+        <span data-i18n="econ.eyebrow">Экономика ситуации</span>
       </div>
-      <h2>Цена опоздания измеряется <em>простоем, внезапным ремонтом и браком.</em></h2>
+      <h2 data-i18n-html="econ.titleHtml">Цена опоздания измеряется <em>простоем, внезапным ремонтом и браком.</em></h2>
       <div class="why-grid economics-grid reveal">
         <article>
-          <h3>Час простоя</h3>
-          <p>Час простоя важного агрегата на среднем заводе обходится предприятию существенно. На непрерывном
+          <h3 data-i18n="econ.downtimeTitle">Час простоя</h3>
+          <p data-i18n="econ.downtimeText">Час простоя важного агрегата на среднем заводе обходится предприятию существенно. На непрерывном
             производстве и в энергетике цена опоздания ещё выше.</p>
         </article>
         <article>
-          <h3>Внезапный ремонт дороже</h3>
-          <p>Внезапный ремонт, простой и брак обычно обходятся предприятию намного дороже, чем вмешательство,
+          <h3 data-i18n="econ.repairTitle">Внезапный ремонт дороже</h3>
+          <p data-i18n="econ.repairText">Внезапный ремонт, простой и брак обычно обходятся предприятию намного дороже, чем вмешательство,
             спланированное на пару дней раньше.</p>
         </article>
         <article>
-          <h3>Ценность Nermyca</h3>
-          <p>Не абстрактная «экономия эффективности», а раннее понимание ситуации: меньше сюрпризов, быстрее собранная
+          <h3 data-i18n="econ.valueTitle">Ценность Nermyca</h3>
+          <p data-i18n="econ.valueText">Не абстрактная «экономия эффективности», а раннее понимание ситуации: меньше сюрпризов, быстрее собранная
             картина, основание действовать до аварии.</p>
         </article>
         <article>
-          <h3>Метрики пилота</h3>
-          <p>Время от сигнала до собранной картины и до решения инженера. Число ложных тревог. Доля ситуаций, где план
+          <h3 data-i18n="econ.metricsTitle">Метрики пилота</h3>
+          <p data-i18n="econ.metricsText">Время от сигнала до собранной картины и до решения инженера. Число ложных тревог. Доля ситуаций, где план
             утвердили без ручного сбора контекста с нуля.</p>
         </article>
       </div>
       <div class="dual economics-dual reveal">
         <div>
-          <h3>Рынок</h3>
-          <p>Рынок промышленного интернета вещей и систем состояния оборудования велик и растёт. Стратегия Nermyca —
+          <h3 data-i18n="econ.marketTitle">Рынок</h3>
+          <p data-i18n-html="econ.marketTextHtml">Рынок промышленного интернета вещей и систем состояния оборудования велик и растёт. Стратегия Nermyca —
             узкий вход: критичные активы цеха, развёртывание на площадке предприятия, объяснимый инженерный контур.<br><br>
             Первый фокус — Россия, СНГ и близкие отрасли: энергетика, добыча, процессные производства.<br><br>
             Путь роста: пилоты на реальных площадках, затем платящие контуры — без гонки за массовым охватом в первый
             год.</p>
         </div>
         <div>
-          <h3>Модель выручки</h3>
-          <p>Оплата за контур — площадка, число активов, линия — и внедрение, а не «за каждый датчик».<br><br>
+          <h3 data-i18n="econ.revenueTitle">Модель выручки</h3>
+          <p data-i18n-html="econ.revenueTextHtml">Оплата за контур — площадка, число активов, линия — и внедрение, а не «за каждый датчик».<br><br>
             Типовой путь: пилот на ограниченном контуре, затем годовое сопровождение с расширением охвата и глубины
             интеграций. Условия и объём — в прямом разговоре.<br><br>
             Octopus добавит аппаратную выручку позже. Основа первой версии — программный контур с высокой маржой после
             внедрения.</p>
         </div>
       </div>
-      <p class="bigline reveal">Nermyca продаёт <em>время до понимания</em> — и возможность вмешаться до аварии, а не
+      <p class="bigline reveal" data-i18n-html="econ.biglineHtml">Nermyca продаёт <em>время до понимания</em> — и возможность вмешаться до аварии, а не
         после.</p>
     </section>
 
@@ -261,17 +265,17 @@
           <div class="section-icon">
             <img src="assets/icons/precision_manufacturing.svg" alt="" aria-hidden="true">
           </div>
-          <span>Одна обычная рабочая ситуация</span>
+          <span data-i18n="scenario.eyebrow">Одна обычная рабочая ситуация</span>
         </div>
-        <h2><span class="time">03:17</span> Насос №17 ещё работает.</h2>
-        <p>Аварийного порога ещё нет. Производство продолжается. Но Nermyca замечает постепенный рост вибрации и
+        <h2 data-i18n-html="scenario.titleHtml"><span class="time">03:17</span> Насос №17 ещё работает.</h2>
+        <p data-i18n="scenario.lead">Аварийного порога ещё нет. Производство продолжается. Но Nermyca замечает постепенный рост вибрации и
           температуры подшипникового узла.</p>
       </div>
       <div class="timeline">
         <article class="step reveal"><span>03:18</span>
           <div>
-            <h3>Сигналы становятся событием</h3>
-            <p>Рост температуры и изменение характера вибрации рассматриваются вместе — в контексте одного физического
+            <h3 data-i18n="scenario.s1Title">Сигналы становятся событием</h3>
+            <p data-i18n="scenario.s1Text">Рост температуры и изменение характера вибрации рассматриваются вместе — в контексте одного физического
               актива.</p>
           </div>
           <div class="step-visual">
@@ -280,8 +284,8 @@
         </article>
         <article class="step reveal"><span>03:18</span>
           <div>
-            <h3>Поднимается история</h3>
-            <p>Похожее сочетание признаков наблюдалось 14 месяцев назад. Тогда осмотр выявил износ подшипника.</p>
+            <h3 data-i18n="scenario.s2Title">Поднимается история</h3>
+            <p data-i18n="scenario.s2Text">Похожее сочетание признаков наблюдалось 14 месяцев назад. Тогда осмотр выявил износ подшипника.</p>
           </div>
           <div class="step-visual">
             <img src="assets/icons/history_expl.svg" alt="" aria-hidden="true">
@@ -289,8 +293,8 @@
         </article>
         <article class="step reveal"><span>03:19</span>
           <div>
-            <h3>Добавляется контекст эксплуатации</h3>
-            <p>После последней замены узел отработал 8 300 часов. Известны история ремонта, установленная деталь и
+            <h3 data-i18n="scenario.s3Title">Добавляется контекст эксплуатации</h3>
+            <p data-i18n="scenario.s3Text">После последней замены узел отработал 8 300 часов. Известны история ремонта, установленная деталь и
               результаты последующих проверок.</p>
           </div>
           <div class="step-visual">
@@ -299,8 +303,8 @@
         </article>
         <article class="step reveal"><span>03:19</span>
           <div>
-            <h3>Подключаются знания</h3>
-            <p>Документация и накопленный опыт предприятия указывают на необходимость проверки подшипникового узла.
+            <h3 data-i18n="scenario.s4Title">Подключаются знания</h3>
+            <p data-i18n="scenario.s4Text">Документация и накопленный опыт предприятия указывают на необходимость проверки подшипникового узла.
               Рядом — подходящие специалисты и применимая запасная часть.</p>
           </div>
           <div class="step-visual">
@@ -309,8 +313,8 @@
         </article>
         <article class="step reveal"><span>03:20</span>
           <div>
-            <h3>Ситуация доходит до человека</h3>
-            <p>Инженеру уже не нужно собирать картину с нуля: перед ним собранная ситуация и предложенный план работ.
+            <h3 data-i18n="scenario.s5Title">Ситуация доходит до человека</h3>
+            <p data-i18n="scenario.s5Text">Инженеру уже не нужно собирать картину с нуля: перед ним собранная ситуация и предложенный план работ.
               Решение — за ним.</p>
           </div>
           <div class="step-visual">
@@ -318,7 +322,7 @@
           </div>
         </article>
       </div>
-      <blockquote class="payoff reveal">Насос ещё работает.<br><em>Но проблема уже видна, а дальнейшие действия можно
+      <blockquote class="payoff reveal" data-i18n-html="scenario.payoffHtml">Насос ещё работает.<br><em>Но проблема уже видна, а дальнейшие действия можно
           утверждать.</em></blockquote>
     </section>
 
@@ -327,30 +331,30 @@
         <div class="section-icon">
           <img src="assets/icons/mediation.svg" alt="" aria-hidden="true">
         </div>
-        <span>От показаний к смыслу</span>
+        <span data-i18n="how.eyebrow">От показаний к смыслу</span>
       </div>
-      <h2>Мониторинг показывает, что происходит.<br><em>Nermyca объясняет, что это значит — и что делать дальше.</em>
+      <h2 data-i18n-html="how.titleHtml">Мониторинг показывает, что происходит.<br><em>Nermyca объясняет, что это значит — и что делать дальше.</em>
       </h2>
       <div class="compare reveal">
-        <div><span>SCADA / мониторинг</span><b>Что происходит сейчас?</b></div>
-        <div><span>ТОиР</span><b>Что и когда обслуживать?</b></div>
-        <div><span>ERP</span><b>Какие есть ресурсы?</b></div>
-        <div><span>Документация</span><b>Как это должно работать?</b></div>
-        <div><span>База знаний</span><b>Что мы об этом знаем?</b></div>
-        <div class="nermyca-row"><span>NERMYCA</span><b>Что означает происходящее и какой план утвердить?</b></div>
+        <div><span data-i18n="how.scadaLabel">SCADA / мониторинг</span><b data-i18n="how.scadaQ">Что происходит сейчас?</b></div>
+        <div><span data-i18n="how.cmmsLabel">ТОиР</span><b data-i18n="how.cmmsQ">Что и когда обслуживать?</b></div>
+        <div><span>ERP</span><b data-i18n="how.erpQ">Какие есть ресурсы?</b></div>
+        <div><span data-i18n="how.docsLabel">Документация</span><b data-i18n="how.docsQ">Как это должно работать?</b></div>
+        <div><span data-i18n="how.kbLabel">База знаний</span><b data-i18n="how.kbQ">Что мы об этом знаем?</b></div>
+        <div class="nermyca-row"><span>NERMYCA</span><b data-i18n="how.nermycaQ">Что означает происходящее и какой план утвердить?</b></div>
       </div>
       <div class="dual reveal">
         <div>
-          <h3>Есть инфраструктура</h3>
-          <p>Nermyca читает промышленные протоколы (Modbus, OPC UA, MQTT, S7, EtherNet/IP) и связывает наблюдения с
+          <h3 data-i18n="how.hasInfraTitle">Есть инфраструктура</h3>
+          <p data-i18n="how.hasInfraText">Nermyca читает промышленные протоколы (Modbus, OPC UA, MQTT, S7, EtherNet/IP) и связывает наблюдения с
             активами, событиями и процессами — поверх уже работающего контура.</p>
         </div>
         <div>
-          <h3>Инфраструктуры почти нет</h3>
-          <p>Там, где цифровой контур слабый, Nermyca поднимает собственный контур сбора данных и модель активов. Octopus расширит этот путь в железо.</p>
+          <h3 data-i18n="how.noInfraTitle">Инфраструктуры почти нет</h3>
+          <p data-i18n="how.noInfraText">Там, где цифровой контур слабый, Nermyca поднимает собственный контур сбора данных и модель активов. Octopus расширит этот путь в железо.</p>
         </div>
       </div>
-      <p class="bigline">Два входа на рынок: <em>дополнить то, что есть,</em><br>или <em>построить необходимый контур с
+      <p class="bigline" data-i18n-html="how.biglineHtml">Два входа на рынок: <em>дополнить то, что есть,</em><br>или <em>построить необходимый контур с
           нуля.</em></p>
     </section>
 
@@ -361,42 +365,42 @@
         </div>
         <span>Nermyca</span>
       </div>
-      <h2>Объект анализа — не датчик, <em>а актив и промышленная ситуация вокруг него.</em></h2>
+      <h2 data-i18n-html="platform.titleHtml">Объект анализа — не датчик, <em>а актив и промышленная ситуация вокруг него.</em></h2>
       <div class="grid-cards">
         <article><span>01</span>
-          <h3>Состояние</h3>
-          <p>Измерения, параметры, режимы работы.</p>
+          <h3 data-i18n="platform.s1">Состояние</h3>
+          <p data-i18n="platform.s1t">Измерения, параметры, режимы работы.</p>
         </article>
         <article><span>02</span>
-          <h3>История</h3>
-          <p>Эксплуатация, неисправности, изменения.</p>
+          <h3 data-i18n="platform.s2">История</h3>
+          <p data-i18n="platform.s2t">Эксплуатация, неисправности, изменения.</p>
         </article>
         <article><span>03</span>
-          <h3>Обслуживание</h3>
-          <p>Осмотры, ремонты, замены, профилактика.</p>
+          <h3 data-i18n="platform.s3">Обслуживание</h3>
+          <p data-i18n="platform.s3t">Осмотры, ремонты, замены, профилактика.</p>
         </article>
         <article><span>04</span>
-          <h3>Связи</h3>
-          <p>Узлы, агрегаты и технологические зависимости.</p>
+          <h3 data-i18n="platform.s4">Связи</h3>
+          <p data-i18n="platform.s4t">Узлы, агрегаты и технологические зависимости.</p>
         </article>
         <article><span>05</span>
-          <h3>Документация</h3>
-          <p>Регламенты, инструкции, технические сведения.</p>
+          <h3 data-i18n="platform.s5">Документация</h3>
+          <p data-i18n="platform.s5t">Регламенты, инструкции, технические сведения.</p>
         </article>
         <article><span>06</span>
-          <h3>Знания</h3>
-          <p>Сохранённый инженерный опыт и объяснимые гипотезы по похожим случаям.</p>
+          <h3 data-i18n="platform.s6">Знания</h3>
+          <p data-i18n="platform.s6t">Сохранённый инженерный опыт и объяснимые гипотезы по похожим случаям.</p>
         </article>
         <article><span>07</span>
-          <h3>Люди</h3>
-          <p>Компетенции, экспертиза и опыт специалистов.</p>
+          <h3 data-i18n="platform.s7">Люди</h3>
+          <p data-i18n="platform.s7t">Компетенции, экспертиза и опыт специалистов.</p>
         </article>
         <article><span>08</span>
-          <h3>Ресурсы</h3>
-          <p>Необходимые детали и материалы.</p>
+          <h3 data-i18n="platform.s8">Ресурсы</h3>
+          <p data-i18n="platform.s8t">Необходимые детали и материалы.</p>
         </article>
       </div>
-      <p class="memory reveal">Сегодняшний ремонт становится <em>знанием для завтрашней диагностики.</em></p>
+      <p class="memory reveal" data-i18n-html="platform.memoryHtml">Сегодняшний ремонт становится <em>знанием для завтрашней диагностики.</em></p>
     </section>
 
     <section class="section pillars">
@@ -404,27 +408,27 @@
         <div class="section-icon">
           <img src="assets/icons/polyline.svg" alt="" aria-hidden="true">
         </div>
-        <span>Модель продукта</span>
+        <span data-i18n="pillars.eyebrow">Модель продукта</span>
       </div>
       <div class="pillar-row">
         <article><span>01</span>
-          <h3>Актив</h3>
-          <p>Реальный объект: оборудование, датчик, система или человек.</p>
+          <h3 data-i18n="pillars.aTitle">Актив</h3>
+          <p data-i18n="pillars.aText">Реальный объект: оборудование, датчик, система или человек.</p>
         </article>
         <i>→</i>
         <article><span>02</span>
-          <h3>Событие</h3>
-          <p>Значимое изменение состояния и его связи.</p>
+          <h3 data-i18n="pillars.eTitle">Событие</h3>
+          <p data-i18n="pillars.eText">Значимое изменение состояния и его связи.</p>
         </article>
         <i>→</i>
         <article><span>03</span>
-          <h3>Процесс</h3>
-          <p>Диагностика, проверка, обслуживание, ремонт.</p>
+          <h3 data-i18n="pillars.pTitle">Процесс</h3>
+          <p data-i18n="pillars.pText">Диагностика, проверка, обслуживание, ремонт.</p>
         </article>
         <i>→</i>
-        <article class="decision"><span>Результат</span>
-          <h3>Решение</h3>
-          <p>Человек утверждает план. Система даёт основание, а не подменяет инженера.</p>
+        <article class="decision"><span data-i18n="pillars.rLabel">Результат</span>
+          <h3 data-i18n="pillars.rTitle">Решение</h3>
+          <p data-i18n="pillars.rText">Человек утверждает план. Система даёт основание, а не подменяет инженера.</p>
         </article>
       </div>
     </section>
@@ -435,23 +439,23 @@
           <div class="section-icon">
             <img src="assets/icons/memory.svg" alt="" aria-hidden="true">
           </div>
-          <span>Полевой узел · Octopus</span>
+          <span data-i18n="octopus.eyebrow">Полевой узел · Octopus</span>
         </div>
-        <h2>Старое оборудование тоже <em>должно говорить.</em></h2>
-        <p class="lead small">Octopus — проектируемый полевой узел Nermyca. Это будущий аппаратный вход: подключение
+        <h2 data-i18n-html="octopus.titleHtml">Старое оборудование тоже <em>должно говорить.</em></h2>
+        <p class="lead small" data-i18n="octopus.lead">Octopus — проектируемый полевой узел Nermyca. Это будущий аппаратный вход: подключение
           датчиков к существующему парку там, где цифровой контур ещё слабый. Сегодня Nermyca уже принимает данные по
           промышленным протоколам; Octopus расширит вход в «немой» парк.</p>
         <ul>
-          <li>унифицированные физические порты</li>
-          <li>автоматическое определение подключённого датчика</li>
-          <li>идентичность, калибровка и история каждого датчика</li>
-          <li>Wi‑Fi, Ethernet/PoE, LoRa и промышленные каналы</li>
+          <li data-i18n="octopus.li1">унифицированные физические порты</li>
+          <li data-i18n="octopus.li2">автоматическое определение подключённого датчика</li>
+          <li data-i18n="octopus.li3">идентичность, калибровка и история каждого датчика</li>
+          <li data-i18n="octopus.li4">Wi‑Fi, Ethernet/PoE, LoRa и промышленные каналы</li>
         </ul>
       </div>
       <figure class="octo-visual reveal">
         <img src="assets/img/octopus-field-node.jpg"
-          alt="Концепт полевого узла Octopus на промышленном электродвигателе: кабели к датчикам на корпусе машины">
-        <figcaption>Концепт: Octopus подключает датчики к существующему парку</figcaption>
+          alt="Концепт полевого узла Octopus на промышленном электродвигателе: кабели к датчикам на корпусе машины" data-i18n-attr="alt:octopus.imgAlt">
+        <figcaption data-i18n="octopus.caption">Концепт: Octopus подключает датчики к существующему парку</figcaption>
       </figure>
     </section>
 
@@ -460,17 +464,17 @@
         <div class="section-icon">
           <img src="assets/icons/router.svg" alt="" aria-hidden="true">
         </div>
-        <span>Интеграция</span>
+        <span data-i18n="integration.eyebrow">Интеграция</span>
       </div>
-      <h2>Nermyca работает и с тем, <em>что уже умеет говорить.</em></h2>
+      <h2 data-i18n-html="integration.titleHtml">Nermyca работает и с тем, <em>что уже умеет говорить.</em></h2>
       <div class="integration-flow reveal">
-        <div><span>ПЛК / SCADA</span><b>Modbus · OPC UA · S7 · EtherNet/IP</b></div>
-        <div><span>IoT / шлюзы</span><b>MQTT</b></div>
-        <div><span>Датчики</span><b>Octopus</b></div>
+        <div><span data-i18n="integration.plc">ПЛК / SCADA</span><b>Modbus · OPC UA · S7 · EtherNet/IP</b></div>
+        <div><span data-i18n="integration.iot">IoT / шлюзы</span><b>MQTT</b></div>
+        <div><span data-i18n="integration.sensors">Датчики</span><b>Octopus</b></div>
         <strong>→</strong>
-        <div class="hub">NERMYCA<small>единая промышленная ситуация</small></div>
+        <div class="hub">NERMYCA<small data-i18n="integration.hub">единая промышленная ситуация</small></div>
       </div>
-      <p class="statement">Сегодня вход — через промышленные протоколы. Octopus расширит контур для оборудования, которое
+      <p class="statement" data-i18n="integration.statement">Сегодня вход — через промышленные протоколы. Octopus расширит контур для оборудования, которое
         иначе остаётся немым.</p>
     </section>
 
@@ -479,14 +483,14 @@
         <div class="section-icon">
           <img src="assets/icons/storage.svg" alt="" aria-hidden="true">
         </div>
-        <span>Память предприятия</span>
+        <span data-i18n="knowledge.eyebrow">Память предприятия</span>
       </div>
-      <h2>Инженеры уходят. Оборудование меняется.<br><em>Опыт не должен исчезать.</em></h2>
+      <h2 data-i18n-html="knowledge.titleHtml">Инженеры уходят. Оборудование меняется.<br><em>Опыт не должен исчезать.</em></h2>
       <div class="knowledge-flow reveal">
-        <span>Проблема</span><i>→</i><span>Диагноз</span><i>→</i><span>План</span><i>→</i><span>Утверждение</span><i>→</i><span>Процесс</span><i>→</i><span
-          class="accent">Знание</span>
+        <span data-i18n="knowledge.problem">Проблема</span><i>→</i><span data-i18n="knowledge.diagnosis">Диагноз</span><i>→</i><span data-i18n="knowledge.plan">План</span><i>→</i><span data-i18n="knowledge.approval">Утверждение</span><i>→</i><span data-i18n="knowledge.process">Процесс</span><i>→</i><span
+          class="accent" data-i18n="knowledge.knowledge">Знание</span>
       </div>
-      <p class="statement">Каждый закрытый инцидент усиливает систему. Nermyca сохраняет инженерный опыт как память
+      <p class="statement" data-i18n="knowledge.statement">Каждый закрытый инцидент усиливает систему. Nermyca сохраняет инженерный опыт как память
         предприятия — и это удерживает клиента.</p>
     </section>
 
@@ -494,8 +498,8 @@
       <div class="standalone-icon">
         <img src="assets/icons/history_edu.svg" alt="" aria-hidden="true">
       </div>
-      <h2>Знания предприятия <em>остаются на предприятии.</em></h2>
-      <p>Nermyca рассчитана на локальное развёртывание. Телеметрия, история, документы и инженерный контекст не уходят во
+      <h2 data-i18n-html="onprem.titleHtml">Знания предприятия <em>остаются на предприятии.</em></h2>
+      <p data-i18n="onprem.text">Nermyca рассчитана на локальное развёртывание. Телеметрия, история, документы и инженерный контекст не уходят во
         внешние облачные ИИ-сервисы. Даже языковой ассистент — только локально на площадке и только поверх уже
           проверенных
         фактов Nermyca.</p>
@@ -507,16 +511,16 @@
           <div class="section-icon">
             <img src="assets/icons/virtual.svg" alt="" aria-hidden="true">
           </div>
-          <span>Демонстратор</span>
+          <span data-i18n="demo.eyebrow">Демонстратор</span>
         </div>
-        <h2>Не слайды.<br><em>Воспроизводимый демонстратор.</em></h2>
-        <p>Есть лабораторный цех и версионированная сквозная история: деградация оборудования → событие и инцидент → похожие
+        <h2 data-i18n-html="demo.titleHtml">Не слайды.<br><em>Воспроизводимый демонстратор.</em></h2>
+        <p data-i18n="demo.text">Есть лабораторный цех и версионированная сквозная история: деградация оборудования → событие и инцидент → похожие
           случаи
           → объяснимый диагноз и рекомендации → документы, специалисты, план → утверждение человеком → контролируемый
           процесс. Это уже проверяемый продукт, а не презентация.</p>
       </div>
       <div class="factory reveal">
-        <span>Норма</span><i>→</i><span>Деградация</span><i>→</i><span>Событие</span><i>→</i><span>Диагноз</span><i>→</i><span>План</span><i>→</i><span>Утверждение</span><i>→</i><span>Процесс</span>
+        <span data-i18n="demo.normal">Норма</span><i>→</i><span data-i18n="demo.degradation">Деградация</span><i>→</i><span data-i18n="demo.event">Событие</span><i>→</i><span data-i18n="demo.diagnosis">Диагноз</span><i>→</i><span data-i18n="demo.plan">План</span><i>→</i><span data-i18n="demo.approval">Утверждение</span><i>→</i><span data-i18n="demo.process">Процесс</span>
       </div>
     </section>
 
@@ -525,33 +529,33 @@
         <div class="section-icon">
           <img src="assets/icons/check.svg" alt="" aria-hidden="true">
         </div>
-        <span>Почему Nermyca</span>
+        <span data-i18n="why.eyebrow">Почему Nermyca</span>
       </div>
-      <h2>Не замена инфраструктуры завода.<br><em>Слой понимания поверх того, что уже работает.</em></h2>
+      <h2 data-i18n-html="why.titleHtml">Не замена инфраструктуры завода.<br><em>Слой понимания поверх того, что уже работает.</em></h2>
       <div class="why-grid">
         <article>
-          <h3>Не ещё один дашборд</h3>
-          <p>Ценность — в сборке ситуации, объяснимом плане и человеческом решении, а не в ещё одном графике.</p>
+          <h3 data-i18n="why.d1">Не ещё один дашборд</h3>
+          <p data-i18n="why.d1t">Ценность — в сборке ситуации, объяснимом плане и человеческом решении, а не в ещё одном графике.</p>
         </article>
         <article>
-          <h3>Два пути внедрения</h3>
-          <p>Читать существующие протоколы или поднимать свой контур — без «сначала оцифруйте всё».</p>
+          <h3 data-i18n="why.d2">Два пути внедрения</h3>
+          <p data-i18n="why.d2t">Читать существующие протоколы или поднимать свой контур — без «сначала оцифруйте всё».</p>
         </article>
         <article>
-          <h3>Софт сейчас, железо следом</h3>
-          <p>Nermyca уже живёт. Octopus — проектируемый аппаратный вход для парка, который иначе остаётся немым.</p>
+          <h3 data-i18n="why.d3">Софт сейчас, железо следом</h3>
+          <p data-i18n="why.d3t">Nermyca уже живёт. Octopus — проектируемый аппаратный вход для парка, который иначе остаётся немым.</p>
         </article>
         <article>
-          <h3>Объяснимость, не чёрный ящик</h3>
-          <p>Диагноз и рекомендации строятся по явным правилам и фактам; ИИ не подменяет инженерное решение.</p>
+          <h3 data-i18n="why.d4">Объяснимость, не чёрный ящик</h3>
+          <p data-i18n="why.d4t">Диагноз и рекомендации строятся по явным правилам и фактам; ИИ не подменяет инженерное решение.</p>
         </article>
         <article>
-          <h3>Локально по умолчанию</h3>
-          <p>Промышленный контекст и необязательная локальная языковая модель остаются внутри периметра предприятия.</p>
+          <h3 data-i18n="why.d5">Локально по умолчанию</h3>
+          <p data-i18n="why.d5t">Промышленный контекст и необязательная локальная языковая модель остаются внутри периметра предприятия.</p>
         </article>
         <article>
-          <h3>Память как удержание</h3>
-          <p>Успешный случай становится частью системы — и повышает стоимость переключения.</p>
+          <h3 data-i18n="why.d6">Память как удержание</h3>
+          <p data-i18n="why.d6t">Успешный случай становится частью системы — и повышает стоимость переключения.</p>
         </article>
       </div>
     </section>
@@ -561,10 +565,10 @@
         <div class="section-icon">
           <img src="assets/icons/schema.svg" alt="" aria-hidden="true">
         </div>
-        <span>Перспектива расширения</span>
+        <span data-i18n="horizon.eyebrow">Перспектива расширения</span>
       </div>
-      <h2>Не только производственная площадка.<br><em>Архитектура не привязана к одному типу оборудования.</em></h2>
-      <p class="statement reveal">В основе Nermyca — физический актив, его состояние, история, события и связанные с ним
+      <h2 data-i18n-html="horizon.titleHtml">Не только производственная площадка.<br><em>Архитектура не привязана к одному типу оборудования.</em></h2>
+      <p class="statement reveal" data-i18n-html="horizon.statementHtml">В основе Nermyca — физический актив, его состояние, история, события и связанные с ним
         процессы.<br><br>
         Поэтому тот же подход применим не только к стационарному промышленному оборудованию. Автомобиль, локомотив,
         судно, автономные технические системы или другой сложный технический объект уже содержит множество собственных
@@ -573,14 +577,14 @@
         данные и связывать их с конкретными узлами, историей эксплуатации, обслуживанием, документацией и знаниями
         специалистов.</p>
       <div class="expansion-domains reveal">
-        <span>Завод</span>
-        <span>Транспорт</span>
-        <span>Судно</span>
-        <span>Автономные системы</span>
+        <span data-i18n="horizon.plant">Завод</span>
+        <span data-i18n="horizon.transport">Транспорт</span>
+        <span data-i18n="horizon.vessel">Судно</span>
+        <span data-i18n="horizon.autonomous">Автономные системы</span>
       </div>
-      <p class="bigline reveal">Меняется источник данных и объект применения.<br><em>Принцип связанного контекста
+      <p class="bigline reveal" data-i18n-html="horizon.biglineHtml">Меняется источник данных и объект применения.<br><em>Принцип связанного контекста
           остаётся тем же.</em></p>
-      <p class="statement reveal">Промышленность — первый рынок Nermyca, а не архитектурная граница.</p>
+      <p class="statement reveal" data-i18n="horizon.closing">Промышленность — первый рынок Nermyca, а не архитектурная граница.</p>
     </section>
 
     <section id="status" class="section status">
@@ -588,46 +592,46 @@
         <div class="section-icon">
           <img src="assets/icons/checklist.svg" alt="" aria-hidden="true">
         </div>
-        <span>Статус</span>
+        <span data-i18n="status.eyebrow">Статус</span>
       </div>
-      <h2>Система уже живёт.<em> Следующий рубеж — пилот на производстве.</em></h2>
+      <h2 data-i18n-html="status.titleHtml">Система уже живёт.<em> Следующий рубеж — пилот на производстве.</em></h2>
       <div class="roadmap">
         <article class="done"><span>01</span>
           <div>
-            <h3>Ядро Nermyca</h3>
-            <p>Актив, событие, процесс, наблюдения, знания, компетенции, склад и применимость замен.</p>
-          </div><b>готово</b>
+            <h3 data-i18n="status.1t">Ядро Nermyca</h3>
+            <p data-i18n="status.1p">Актив, событие, процесс, наблюдения, знания, компетенции, склад и применимость замен.</p>
+          </div><b data-i18n="status.1b">готово</b>
         </article>
         <article class="done"><span>02</span>
           <div>
-            <h3>Промышленный сбор</h3>
-            <p>Modbus TCP, OPC UA, MQTT, S7, EtherNet/IP — сбор данных только на чтение.</p>
-          </div><b>готово</b>
+            <h3 data-i18n="status.2t">Промышленный сбор</h3>
+            <p data-i18n="status.2p">Modbus TCP, OPC UA, MQTT, S7, EtherNet/IP — сбор данных только на чтение.</p>
+          </div><b data-i18n="status.2b">готово</b>
         </article>
         <article class="done"><span>03</span>
           <div>
-            <h3>Сквозной демонстратор</h3>
-            <p>Версионированная история демонстрационного насоса: от деградации до контролируемого процесса с
+            <h3 data-i18n="status.3t">Сквозной демонстратор</h3>
+            <p data-i18n="status.3p">Версионированная история демонстрационного насоса: от деградации до контролируемого процесса с
               утверждением человеком.</p>
-          </div><b>готово</b>
+          </div><b data-i18n="status.3b">готово</b>
         </article>
         <article class="active"><span>04</span>
           <div>
-            <h3>Инженерный контур</h3>
-            <p>Углубление диагностики, планов, интеграций и операторского контура.</p>
-          </div><b>в развитии</b>
+            <h3 data-i18n="status.4t">Инженерный контур</h3>
+            <p data-i18n="status.4p">Углубление диагностики, планов, интеграций и операторского контура.</p>
+          </div><b data-i18n="status.4b">в развитии</b>
         </article>
         <article class="active"><span>05</span>
           <div>
-            <h3>Octopus</h3>
-            <p>Пилотный аппаратный узел для «немого» парка.</p>
-          </div><b>проектируется</b>
+            <h3 data-i18n="status.5t">Octopus</h3>
+            <p data-i18n="status.5p">Пилотный аппаратный узел для «немого» парка.</p>
+          </div><b data-i18n="status.5b">проектируется</b>
         </article>
         <article><span>06</span>
           <div>
-            <h3>Пилот на предприятии</h3>
-            <p>Проверка на реальном производстве.</p>
-          </div><b>цель</b>
+            <h3 data-i18n="status.6t">Пилот на предприятии</h3>
+            <p data-i18n="status.6p">Проверка на реальном производстве.</p>
+          </div><b data-i18n="status.6b">цель</b>
         </article>
       </div>
     </section>
@@ -638,31 +642,31 @@
           <div class="section-icon">
             <img src="assets/icons/mail.svg" alt="" aria-hidden="true">
           </div>
-          <span>Инвестору</span>
+          <span data-i18n="contact.eyebrow">Инвестору</span>
         </div>
-        <h2>Ищем партнёра на путь <em>к реальному производству.</em></h2>
-        <p>Ядро Nermyca, промышленный сбор данных и воспроизводимый демонстратор уже работают. Следующий этап — пилот на
+        <h2 data-i18n-html="contact.titleHtml">Ищем партнёра на путь <em>к реальному производству.</em></h2>
+        <p data-i18n="contact.lead">Ядро Nermyca, промышленный сбор данных и воспроизводимый демонстратор уже работают. Следующий этап — пилот на
           предприятии и развитие полевого узла Octopus. Приглашаем инвестора и отраслевого партнёра на этот путь.</p>
         <div class="ask-list reveal">
-          <h3>Инвестиционный запрос</h3>
-          <p class="ask-note">Раунд на выход в пилоты на реальном производстве, упаковку демонстратора для заказчика,
+          <h3 data-i18n="contact.askTitle">Инвестиционный запрос</h3>
+          <p class="ask-note" data-i18n="contact.askText">Раунд на выход в пилоты на реальном производстве, упаковку демонстратора для заказчика,
             углубление интеграций и первый контур Octopus. Объём и условия — в прямом разговоре.</p>
-          <h3>Куда пойдут деньги</h3>
+          <h3 data-i18n="contact.fundsTitle">Куда пойдут деньги</h3>
           <ul>
-            <li>пилот на реальном производстве и упаковка демонстратора для заказчика</li>
-            <li>углубление инженерного контура и интеграций</li>
-            <li>проектирование и первый контур Octopus</li>
+            <li data-i18n="contact.fund1">пилот на реальном производстве и упаковка демонстратора для заказчика</li>
+            <li data-i18n="contact.fund2">углубление инженерного контура и интеграций</li>
+            <li data-i18n="contact.fund3">проектирование и первый контур Octopus</li>
           </ul>
         </div>
       </div>
       <div class="contact-grid">
-        <article><span>Инвестору</span>
-          <h3>Готовы обсудить тезис, демо и план следующего этапа?</h3><a
-            href="mailto:contact@nermyca.com?subject=Nermyca — инвестиции">Написать →</a>
+        <article><span data-i18n="contact.invLabel">Инвестору</span>
+          <h3 data-i18n="contact.invTitle">Готовы обсудить тезис, демо и план следующего этапа?</h3><a
+            href="mailto:contact@nermyca.com?subject=Nermyca — инвестиции" data-i18n="contact.invCta" data-i18n-mail="contact.invSubject">Написать →</a>
         </article>
-        <article><span>Предприятию / партнёру</span>
-          <h3>Есть контур, оборудование или процесс для пилота?</h3><a
-            href="mailto:contact@nermyca.com?subject=Nermyca — пилот">Обсудить пилот →</a>
+        <article><span data-i18n="contact.partnerLabel">Предприятию / партнёру</span>
+          <h3 data-i18n="contact.partnerTitle">Есть контур, оборудование или процесс для пилота?</h3><a
+            href="mailto:contact@nermyca.com?subject=Nermyca — пилот" data-i18n="contact.partnerCta" data-i18n-mail="contact.partnerSubject">Обсудить пилот →</a>
         </article>
       </div>
     </section>
@@ -670,8 +674,9 @@
 
   <footer>
     <div class="brand"><img src="assets/img/nermyca-logo-cyan.png" alt=""><span>NERMYCA</span></div>
-    <p>Видеть. Понимать. Предупреждать.</p><small>© 2026 Nermyca. Проект в разработке.</small>
+    <p data-i18n="footer.tagline">Видеть. Понимать. Предупреждать.</p><small data-i18n="footer.copy">© 2026 Nermyca. Проект в разработке.</small>
   </footer>
+  <script src="assets/js/i18n.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 

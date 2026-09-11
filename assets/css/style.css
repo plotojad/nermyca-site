@@ -84,6 +84,44 @@ nav {
   color: #b7bfbe
 }
 
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  margin-left: 4px;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  overflow: hidden;
+  background: transparent
+}
+
+.lang-btn {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  color: var(--steel);
+  font: 700 11px/1 InterLocal, Arial, sans-serif;
+  letter-spacing: .08em;
+  padding: 8px 10px;
+  margin: 0;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent
+}
+
+.lang-btn.is-active {
+  background: rgba(85, 214, 194, .14);
+  background-color: rgba(85, 214, 194, .14);
+  color: var(--cyan)
+}
+
+.lang-btn:not(.is-active):hover {
+  color: var(--ivory)
+}
+
 nav a:hover {
   color: var(--ivory)
 }
@@ -857,6 +895,11 @@ footer small {
 
   nav.open {
     display: flex
+  }
+
+  .lang-switch {
+    margin-left: 0;
+    margin-top: 8px
   }
 
   .menu {

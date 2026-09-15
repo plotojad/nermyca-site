@@ -224,13 +224,12 @@ h3 {
 .hero {
   min-height: calc(100vh - 76px);
   display: grid;
-  grid-template-columns: 1.15fr .85fr;
+  grid-template-columns: 1fr;
   align-items: start;
   gap: 30px
 }
 
 .hero-header {
-  grid-column: 1 / -1;
   width: 100%;
 }
 
@@ -238,22 +237,47 @@ h3 {
   max-width: none;
 }
 
+.hero-body {
+  display: grid;
+  grid-template-columns: 1.15fr .85fr;
+  gap: 30px;
+  align-items: start
+}
+
+.hero-copy {
+  margin: 0;
+  padding: 0
+}
+
+.hero-copy .lead {
+  margin-top: 0
+}
+
 .context-map {
-  height: 540px;
-  position: relative
+  width: 500px;
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
+  position: relative;
+  justify-self: end;
+  align-self: start;
+  margin: 0
 }
 
 .context-map svg {
   position: absolute;
   inset: 0;
   width: 100%;
-  height: 100%
+  height: 100%;
+  overflow: visible;
+  z-index: 1;
+  pointer-events: none
 }
 
 .context-map line {
-  stroke: rgba(85, 214, 194, .34);
+  stroke: rgba(85, 214, 194, .55);
   stroke-width: 1.5;
-  stroke-dasharray: 4 8
+  stroke-linecap: square;
+  vector-effect: non-scaling-stroke
 }
 
 .core,
@@ -262,64 +286,84 @@ h3 {
   z-index: 2;
   background: var(--graph);
   border: 1px solid #334044;
-  padding: 14px 16px
+  box-sizing: border-box
 }
 
 .core {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 150px;
+  width: 30%;
+  height: 22.4%;
+  padding: 10px 12px;
   text-align: center;
-  border-color: var(--cyan)
+  border-color: var(--cyan);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
 }
 
 .core img {
   display: block;
-  width: 48px;
-  margin: 0 auto 8px;
+  width: 36%;
+  max-width: 48px;
+  margin: 0 auto 6px;
   object-fit: contain
+}
+
+.core b,
+.node b {
+  display: block;
+  line-height: 1.2
 }
 
 .core span,
 .node span {
   display: block;
   color: var(--steel);
-  font-size: 12px
+  font-size: 11px;
+  margin-top: 2px
 }
 
 .node {
-  min-width: 125px
+  width: 30%;
+  height: 14.8%;
+  min-width: 0;
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center
 }
 
 .n1 {
   left: 0;
-  top: 9%
+  top: 0
 }
 
 .n2 {
   right: 0;
-  top: 9%
+  top: 0
 }
 
 .n3 {
   right: 0;
-  top: 46%
+  top: 42.6%
 }
 
 .n4 {
-  right: 4%;
-  bottom: 5%
+  right: 0;
+  bottom: 0
 }
 
 .n5 {
-  left: 5%;
-  bottom: 5%
+  left: 0;
+  bottom: 0
 }
 
 .n6 {
   left: 0;
-  top: 47%
+  top: 42.6%
 }
 
 .systems {
@@ -919,8 +963,15 @@ footer small {
     padding-top: 80px
   }
 
+  .hero-body {
+    grid-template-columns: 1fr;
+    gap: 40px
+  }
+
   .context-map {
-    height: 460px
+    width: min(500px, 100%);
+    justify-self: center;
+    margin: 0 auto
   }
 
   .systems {
@@ -983,17 +1034,7 @@ footer small {
   }
 
   .context-map {
-    height: 390px
-  }
-
-  .node {
-    min-width: 105px;
-    padding: 9px;
-    font-size: 12px
-  }
-
-  .core {
-    width: 120px
+    width: min(500px, 100%)
   }
 
   .systems,
@@ -1139,60 +1180,6 @@ h3 {
   letter-spacing: -.005em
 }
 
-.context-map .node {
-  width: 150px;
-  height: 74px;
-  min-width: 150px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center
-}
-
-.context-map .n1 {
-  left: 0;
-  top: 6%
-}
-
-.context-map .n6 {
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%)
-}
-
-.context-map .n5 {
-  left: 0;
-  bottom: 6%
-}
-
-.context-map .n2 {
-  right: 0;
-  top: 6%
-}
-
-.context-map .n3 {
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%)
-}
-
-.context-map .n4 {
-  right: 0;
-  bottom: 6%
-}
-
-.context-map .core {
-  width: 150px;
-  height: 112px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center
-}
-
-.context-map svg line {
-  stroke-dasharray: none;
-  opacity: .85
-}
-
 .timeline {
   max-width: 1100px
 }
@@ -1239,17 +1226,6 @@ h3 {
 
   h2 {
     letter-spacing: -.008em
-  }
-
-  .context-map .node {
-    width: 112px;
-    height: 62px;
-    min-width: 112px
-  }
-
-  .context-map .core {
-    width: 118px;
-    height: 94px
   }
 
   .step {

@@ -655,6 +655,47 @@ h3 {
   font-size: 24px
 }
 
+.position-flow {
+  margin: 36px 0 48px;
+  display: grid;
+  grid-template-columns: minmax(180px, 1.1fr) auto minmax(140px, 0.7fr) auto minmax(180px, 1.1fr);
+  gap: 12px;
+  align-items: center
+}
+
+.position-sources {
+  display: grid;
+  gap: 8px
+}
+
+.position-sources span,
+.position-hub,
+.position-out {
+  border: 1px solid var(--line);
+  background: var(--graph);
+  padding: 13px 15px
+}
+
+.position-hub {
+  border-color: var(--cyan);
+  color: var(--cyan);
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0.04em
+}
+
+.position-out {
+  font-weight: 700;
+  text-align: center
+}
+
+.position-arrow {
+  color: var(--cyan);
+  font-size: 24px;
+  font-weight: 400;
+  justify-self: center
+}
+
 .integration-flow {
   margin-bottom: 48px;
   display: grid;
@@ -1009,6 +1050,14 @@ footer small {
   .integration-flow strong {
     transform: rotate(90deg);
     justify-self: center
+  }
+
+  .position-flow {
+    grid-template-columns: 1fr
+  }
+
+  .position-arrow {
+    transform: rotate(90deg)
   }
 
   .why-grid {
